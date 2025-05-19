@@ -220,5 +220,32 @@ The cat was playing in the garden.</textarea
         <input type="submit" value="Submit" />
       </fieldset>
     </form>
+
+    <form action="">
+      <input list="bowsers" />
+      <datalist id="bowsers">
+        <option value="Chrome"></option>
+        <option value="Brave"></option>
+        <option value="Safari"></option>
+        <option value="Edge"></option>
+      </datalist>
+    </form>
+
+    <form>
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" />
+    </form>
+
+    <form>
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+    </form>
+
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="hidden" id="custId" name="custId" value="3487" />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
