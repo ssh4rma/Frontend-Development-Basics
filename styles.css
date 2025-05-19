@@ -6,3 +6,11 @@
   text-decoration-style: dashed;
   text-transform: capitalize;
 }
+
+#t1,
+th,
+tr,
+td {
+  border: solid 2px black;
+  border-collapse: collapse;
+}
