@@ -14,3 +14,10 @@ td {
   border: solid 2px black;
   border-collapse: collapse;
 }
+
+#test-img {
+  position: sticky;
+  top: 0;
+  left: 100%;
+  background-color: black;
+}
