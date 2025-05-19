@@ -21,4 +21,5 @@ td {
   right: 50vw;
   left: 50vw;
   left: 50px;
+  z-index: -1;
 }
