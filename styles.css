@@ -16,8 +16,7 @@ td {
 }
 
 #test-img {
-  position: sticky;
+  position: fixed;
   top: 0;
-  left: 100%;
-  background-color: black;
+  left: 0;
 }
