@@ -16,11 +16,12 @@ td {
 }
 
 #test-img {
-  position: absolute;
-  top: 50vh;
+  /* position: static; */
+  /* top: 50vh;
   right: 50vw;
-  left: 50vw;
+  left: 50vw; */
   z-index: 1;
+  float: left;
 }
 
 #para1 {
