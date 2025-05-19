@@ -5,10 +5,11 @@ body {
   background-attachment: fixed;
 }
 
-p {
+#first {
   border: groove 20px red;
 }
 
-p {
-  margin: 100px 300px;
+#second {
+  border: groove 20px red;
+  outline: dotted 3px black;
 }
