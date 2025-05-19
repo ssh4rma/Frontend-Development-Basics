@@ -1,15 +1,4 @@
-body {
-  /* background-image: url("./image.jpg"); */
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-}
-
 #first {
-  border: groove 20px red;
-}
-
-#second {
-  border: groove 20px red;
-  outline: dotted 3px black;
+  border: groove 2px red;
+  text-align: center;
 }
