@@ -39,3 +39,7 @@ td {
 a:hover {
   color: red;
 }
+
+img:hover {
+  opacity: 0.5;
+}
