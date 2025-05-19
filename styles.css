@@ -20,6 +20,17 @@ td {
   top: 50vh;
   right: 50vw;
   left: 50vw;
-  left: 50px;
-  z-index: -1;
+  z-index: 1;
+}
+
+#para1 {
+  width: 500px;
+  height: 100px;
+  overflow: scroll;
+}
+
+#para2 {
+  width: 500px;
+  height: 200px;
+  overflow: scroll;
 }
