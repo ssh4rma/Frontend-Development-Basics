@@ -4,3 +4,7 @@ body {
   background-position: right top;
   background-attachment: fixed;
 }
+
+p {
+  border: ridge 20px red;
+}
