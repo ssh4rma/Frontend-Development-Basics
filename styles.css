@@ -16,7 +16,7 @@ td {
 }
 
 #test-img {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: static;
+  top: -190px;
+  left: 50px;
 }
