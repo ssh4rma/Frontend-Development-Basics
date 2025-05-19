@@ -21,7 +21,7 @@ td {
   right: 50vw;
   left: 50vw; */
   z-index: 1;
-  float: left;
+  float: none;
 }
 
 #para1 {
@@ -34,4 +34,8 @@ td {
   width: 500px;
   height: 200px;
   overflow: scroll;
+}
+
+a:hover {
+  color: red;
 }
