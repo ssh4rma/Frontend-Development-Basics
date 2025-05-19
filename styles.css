@@ -4,4 +4,5 @@
   text-decoration-line: line-through;
   text-decoration-color: blue;
   text-decoration-style: dashed;
+  text-transform: capitalize;
 }
