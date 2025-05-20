@@ -5,6 +5,8 @@
   display: grid;
   grid-template-columns: 2fr, 2fr;
   grid-template-rows: 2fr, 2fr;
+  row-gap: 5px;
+  column-gap: 5px;
 }
 
 .grid-item:nth-child(1) {
