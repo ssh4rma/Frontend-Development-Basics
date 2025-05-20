@@ -10,6 +10,6 @@ $(document).ready(function () {
   });
 });
 
-$("input").focus(function () {
+$("input").blur(function () {
   $(this).css("background-color", "black");
 });
