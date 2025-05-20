@@ -1,0 +1,5 @@
+.main {
+  box-sizing: content-box;
+  border: solid black 2px;
+  padding: 10px;
+}
