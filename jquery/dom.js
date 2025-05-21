@@ -1,3 +1,3 @@
-$("#p1").click(function () {
-  $("#p1").remove();
+$(".p1").click(function () {
+  $(".p1").empty();
 });
