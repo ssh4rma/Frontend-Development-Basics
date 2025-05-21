@@ -1,3 +1,3 @@
 $("#p1").click(function () {
-  alert($(this).text());
+  alert($(this).html());
 });
