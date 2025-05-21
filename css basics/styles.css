@@ -1,0 +1,59 @@
+#first {
+  border: groove 2px red;
+  text-align: center;
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+  text-decoration-style: dashed;
+  text-transform: capitalize;
+}
+
+#t1,
+th,
+tr,
+td {
+  border: solid 2px black;
+  border-collapse: collapse;
+}
+
+#test-img {
+  /* position: static; */
+  /* top: 50vh;
+  right: 50vw;
+  left: 50vw; */
+  z-index: 1;
+  float: none;
+}
+
+#para1 {
+  width: 500px;
+  height: 100px;
+  overflow: scroll;
+}
+
+#para2 {
+  width: 500px;
+  height: 200px;
+  overflow: scroll;
+}
+
+a:hover {
+  color: red;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  width: 50px;
+}
+li a:hover {
+  color: pink;
+}
