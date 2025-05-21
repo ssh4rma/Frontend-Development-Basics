@@ -1,3 +1,3 @@
 $("#p1").click(function () {
-  alert($(this).html());
+  $("#spantag").text("this is a new text from jQuery DOM method");
 });
