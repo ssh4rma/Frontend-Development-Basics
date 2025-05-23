@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tooltip Follows Cursor</title>
+    <style>
+      #tooltip-text {
+        position: absolute;
+        visibility: hidden;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.google.com" id="tooltip">
+      Hover over me for a surprise
+    </a>
+
+    <div id="tooltip-text">surprise!</div>
+
+    <script>
+      const link = document.getElementById("tooltip");
+      const tooltip = document.getElementById("tooltip-text");
+
+      link.addEventListener("mouseenter", () => {
+        tooltip.style.visibility = "visible";
+      });
+
+      link.addEventListener("mouseleave", () => {
+        tooltip.style.visibility = "hidden";
+      });
+
+      link.addEventListener("mousemove", (e) => {
+        tooltip.style.left = e.pageX + 10 + "px";
+        tooltip.style.top = e.pageY + 10 + "px";
+      });
+    </script>
+  </body>
+</html>
