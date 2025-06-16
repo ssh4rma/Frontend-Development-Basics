@@ -2,48 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
+    <title>Tooltip Follows Cursor</title>
+    <style>
+      #tooltip-text {
+        position: absolute;
+        visibility: hidden;
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">Hello World</div>
+    <a href="https://www.google.com" id="tooltip">
+      Hover over me for a surprise
+    </a>
 
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-
-    <p id="sample">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, soluta!
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iste!
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos,
-      quibusdam ab iusto quis quam.
-    </p>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
-      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
+    <div id="tooltip-text">surprise!</div>
 
     <script>
-      document.write(Date());
+      const link = document.getElementById("tooltip");
+      const tooltip = document.getElementById("tooltip-text");
+
+      link.addEventListener("mouseenter", () => {
+        tooltip.style.visibility = "visible";
+      });
+
+      link.addEventListener("mouseleave", () => {
+        tooltip.style.visibility = "hidden";
+      });
+
+      link.addEventListener("mousemove", (e) => {
+        tooltip.style.left = e.pageX + 10 + "px";
+        tooltip.style.top = e.pageY + 10 + "px";
+      });
     </script>
   </body>
 </html>
